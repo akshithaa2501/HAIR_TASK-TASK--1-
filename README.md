@@ -82,21 +82,24 @@ using OpenCV image processing.
 
 Step 3: Apply Internship Task Rule
 
-This is the main task logic:
+Core Logic Code Block
+The selective inversion and routing rule engine is structured within the following operational block inside `hair_task.py`[cite: 5]:
 
+```python
+# Custom Overriding Logic Block (Ages 20 to 30)
 if 20 <= predicted_age <= 30:
-
     if hair_length == "Long":
-
         final_gender = "Female"
-
+        logic_note = "⚠️ Gender forced to Female via Long Hair Rule (Age 20-30)"
     else:
-
         final_gender = "Male"
-
+        logic_note = "⚠️ Gender forced to Male via Short Hair Rule (Age 20-30)"
+    confidence_display = "100.00% (Rule Enforced)"
 else:
-
     final_gender = model_gender
+    logic_note = "✅ Standard Model Prediction (Outside Age 20-30 Bracket)"
+    raw_conf = gender_prob if final_gender == "Female" else 1.0 - gender_prob
+    confidence_display = f"{raw_conf:.2%}"
 
 4. Graphical User Interface
 
