@@ -128,7 +128,7 @@ Execution & Reproducibility
 ```bash
 # Clone the repository
 git clone [https://github.com/akshithaa2501/HAIR_TASK-TASK--1.git](https://github.com/akshithaa2501/HAIR_TASK-TASK--1.git)
-cd HAIR_TASK-TASK--1
+cd HAIR_TASK-TASK--1-
 
 # Install requirements
 pip install -r requirements.txt
