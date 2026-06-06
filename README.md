@@ -83,7 +83,7 @@ using OpenCV image processing.
 Step 3: Apply Internship Task Rule
 
 Core Logic Code Block
-The selective inversion and routing rule engine is structured within the following operational block inside `hair_task.py`[cite: 5]:
+The selective inversion and routing rule engine is structured within the following operational block inside `hair_task.py`:
 
 ```python
 # Custom Overriding Logic Block (Ages 20 to 30)
