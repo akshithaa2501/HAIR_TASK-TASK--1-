@@ -1,5 +1,5 @@
-Hair Length Identification Task
-Problem Statement
+# Hair Length Identification Task
+# Problem Statement
 
 This project is an extension of the Age and Gender Detection system developed during training.
 
@@ -12,14 +12,14 @@ For individuals below 20 years or above 30 years, the original gender prediction
 
 The solution includes a graphical user interface (GUI) built using Streamlit to allow users to upload images and view prediction results.
 
-Dataset
+# Dataset
 Original Dataset
 
 UTKFace Dataset
 
 The original Age and Gender Detection model was trained using the UTKFace dataset, which contains facial images with age and gender annotations.
 
-Dataset Features:
+# Dataset Features:
 
 Age Labels
 Gender Labels
@@ -27,7 +27,7 @@ Facial Images
 
 The existing trained model (Age_Sex_Detection.h5) from the training project is used as the base model for age and gender prediction.
 
-Methodology
+# Methodology
 1. Baseline Model
 
 The original training project performs:
@@ -48,8 +48,8 @@ Short Hair
 
 3. Rule-Based Decision Logic
 
-The internship task logic is applied after age prediction.
-Step 1: Predict Age and Gender
+# The internship task logic is applied after age prediction.
+- Step 1: Predict Age and Gender
 
 The existing trained model predicts:
 
@@ -64,7 +64,7 @@ Output:
 Age
 Original Gender
 
-Step 2: Detect Hair Length
+- Step 2: Detect Hair Length
 
 The function:
 
@@ -80,9 +80,9 @@ Short
 
 using OpenCV image processing.
 
-Step 3: Apply Internship Task Rule
+- Step 3: Apply Internship Task Rule
 
-Core Logic Code Block
+# Core Logic Code Block
 The selective inversion and routing rule engine is structured within the following operational block inside `hair_task.py`:
 
 ```python
@@ -112,7 +112,7 @@ Display final gender result
 Display confidence score
 Display applied decision rule
 
-Results
+# Results
 
 The enhanced system successfully extends the original Age and Gender Detection project by incorporating hair-length-based gender classification logic.
 
@@ -124,7 +124,7 @@ Final Gender Prediction
 Confidence Score
 Applied Decision Rule
 
-Execution & Reproducibility
+# Execution & Reproducibility
 ```bash
 # Clone the repository
 git clone [https://github.com/akshithaa2501/HAIR_TASK-TASK--1.git](https://github.com/akshithaa2501/HAIR_TASK-TASK--1.git)
@@ -135,3 +135,6 @@ pip install -r requirements.txt
 
 # Run the GUI application
 streamlit run hair_task.py
+
+# Dataset Link
+[https://github.com/akshithaa2501/Long_hair_identification-TASK-1-](https://drive.google.com/drive/folders/17eBjpuVjb07c8Jp7Za1aGMhaI20fycFe?usp=drive_link)
